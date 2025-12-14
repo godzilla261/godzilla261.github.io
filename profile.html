@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/profile-style.css">
+</head>
+<body>
+ 
+    <header class="header">
+        <a href="index.html" class="logo">
+            <div class="logo-icon">
+                <img src="/image/Логотип.svg"></img>
+            </div>
+            <div class="logo-text">ting.ru</div>
+        </a>
+
+        <button class="navbar-toggler d-block d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="nav-container">
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Главная</a>
+                <a href="services.html" class="nav-link">Услуги</a>
+                <a href="gallery.html" class="nav-link">Галерея</a>
+                <a href="aboutus.html" class="nav-link">О нас</a>
+            </nav>
+        </div>
+        
+        
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+            <div class="offcanvas-header">
+                <h1 class="offcanvas-title" id="mobileMenuLabel">Меню</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <nav class="nav-menu-mobile d-flex flex-column">
+                    <a href="main.html" class="nav-link">Главная</a>
+                    <a href="services.html" class="nav-link">Услуги</a>
+                    <a href="gallery.html" class="nav-link">Галерея</a>
+                    <a href="aboutus.html" class="nav-link">О нас</a>
+                    <a href="autorization.html" class="nav-link mt-3">
+                        <i class="fas fa-sign-in-alt me-2"></i>Войти
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+       
+        <div class="profile-container">
+            <div class="row">
+               
+                <div class="col-lg-4 col-md-5 mb-4">
+                    <div class="profile-sidebar">
+                        <div class="profile-info">
+                            <div class="profile-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <spam class="profile-name">pazhiloy_schumaher</spam>
+                        </div>
+                        
+                        <div class="profile-stats">
+                            <div class="stat-item">
+                                <div class="stat-value">12</div>
+                                <div class="stat-label">Заездов</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">1</div>
+                                <div class="stat-label">Активные</div>
+                            </div>
+                        </div>
+                        
+                        <ul class="profile-menu">
+                            <li class="profile-menu-item">
+                                <a href="#" class="profile-menu-link active">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    Мои бронирования
+                                </a>
+                            </li>
+                            <li class="profile-menu-item">
+                                <a href="/autorization.html" class="profile-menu-link">
+                                    <i class="fas fa-sign-out-alt"></i>
+                                    Выйти
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+               
+                <div class="col-lg-8 col-md-7">
+                    <div class="profile-content">
+                        <div class="content-header">
+                            <spam class="content-title">Активные бронирования</spam>
+                            <a href="services.html" class="btn-custom btn-primary-custom">
+                                <i class="fas fa-plus"></i> Новое бронирование
+                            </a>
+                        </div>
+                        
+
+                        <div class="card booking-card">
+                            <div class="card-header">
+                                Запись на заезд
+                                <span class="booking-id">ID: #KART-2024-157</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="booking-details">
+                                    <div class="detail-item">
+                                        <div class="detail-label">
+                                            <i class="fas fa-user"></i> ФИО
+                                        </div>
+                                        <div class="detail-value">Иванов Алексей Петрович</div>
+                                    </div>
+                                    
+                                    <div class="detail-item">
+                                        <div class="detail-label">
+                                            <i class="fas fa-calendar-day"></i> Дата
+                                        </div>
+                                        <div class="detail-value">15.04.2025</div>
+                                    </div>
+                                    
+                                    <div class="detail-item">
+                                        <div class="detail-label">
+                                            <i class="fas fa-clock"></i> Время
+                                        </div>
+                                        <div class="detail-value">18:30 - 19:00</div>
+                                    </div>
+                                    
+                                    <div class="detail-item">
+                                        <div class="detail-label">
+                                            <i class="fas fa-flag-checkered"></i> Тип заезда
+                                        </div>
+                                        <div class="detail-value">Взрослый (270cc)</div>
+                                    </div>
+                                    
+                                    <div class="detail-item">
+                                        <div class="detail-label">
+                                            <i class="fas fa-users"></i> Участников
+                                        </div>
+                                        <div class="detail-value">2 человека</div>
+                                    </div>
+                                    
+                                    <div class="detail-item">
+                                        <div class="detail-label">
+                                            <i class="fas fa-wallet"></i> Стоимость
+                                        </div>
+                                        <div class="detail-value">2 400 ₽</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="detail-item">
+                                    <div class="detail-label">
+                                        <i class="fas fa-info-circle"></i> Статус
+                                    </div>
+                                    <div>
+                                        <span class="status-badge status-confirmed">Подтверждено</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="detail-item mt-3">
+                                    <div class="detail-label">
+                                        <i class="fas fa-sticky-note"></i> Дополнительная информация
+                                    </div>
+                                    <div class="detail-value">
+                                        Заезд с другом. Просьба предоставить карты с номерами 6 и 7.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="booking-info">
+                                    <small class="text-muted">Забронировано: 10.04.2025 в 14:25</small>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="mt-4">
+                            <div class="alert alert-light border-start border-4 border-CE0000" style="border-color: #CE0000 !important;">
+                                <div class="d-flex align-items-start">
+                                    <i class="fas fa-exclamation-circle me-3 mt-1" style="color: #CE0000;"></i>
+                                    <div>
+                                        <h2 class="alert-heading" style="color: #CE0000;">Правила отмены бронирования</h2>
+                                        <p class="mb-2">Отменить бронирование можно не позднее чем за 24 часа до начала заезда.</p>
+                                        <p class="mb-0">Звонить по номеру +7(495)123-45-67</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    
+    <footer class="footer">
+        <div class="footer-content">
+         
+            <div class="quick-links">
+                <a href="main.html" class="quick-link">
+                    <i class="fas fa-home"></i> Главная
+                </a>
+                <a href="services.html" class="quick-link">
+                    <i class="fas fa-flag-checkered"></i> Услуги
+                </a>
+                <a href="gallery.html" class="quick-link">
+                    <i class="fas fa-images"></i> Галерея
+                </a>
+                <a href="aboutus.html" class="quick-link">
+                    <i class="fas fa-info-circle"></i> О нас
+                </a>
+                <a href="autorization.html" class="quick-link">
+                    <i class="fas fa-sign-in-alt"></i> Войти
+                </a>
+            </div>
+            
+         
+            <div class="footer-contacts">
+                <div class="footer-contact-item">
+                    <div class="footer-contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="footer-contact-text">г. Москва, ул. Скоростная, д. 15</div>
+                </div>
+                
+                <div class="footer-contact-item">
+                    <div class="footer-contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="footer-contact-text">+7 (495) 123-45-67</div>
+                </div>
+                
+                <div class="footer-contact-item">
+                    <div class="footer-contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="footer-contact-text">Пн-Вс: 10:00 - 22:00</div>
+                </div>
+            </div>
+          
+            <div class="footer-bottom">
+                <div class="copyright">
+                    © 2024 KartClub. Все права защищены.
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="#" class="footer-bottom-link">Политика конфиденциальности</a>
+                    <a href="#" class="footer-bottom-link">Условия использования</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+     
+        document.addEventListener('DOMContentLoaded', function() {
+          
+            
+            document.querySelector('.btn-primary-custom').addEventListener('click', function(e) {
+                if (this.textContent.includes('Новое бронирование')) {
+                    e.preventDefault();
+                    window.location.href = 'services.html';
+                }
+            });
+            
+            
+            document.querySelector('.btn-outline-custom').addEventListener('click', function() {
+                alert('Функция изменения бронирования. В реальном приложении здесь открывалась бы форма редактирования.');
+            });
+            
+            
+            document.querySelectorAll('.btn-primary-custom').forEach(btn => {
+                if (btn.textContent.includes('Распечатать')) {
+                    btn.addEventListener('click', function() {
+                        alert('Печать информации о бронировании. В реальном приложении здесь открывался бы диалог печати.');
+                    });
+                }
+            });
+            
+            
+            document.querySelectorAll('.quick-link').forEach(link => {
+                link.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-2px)';
+                });
+                
+                link.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+            
+           
+            const currentPage = window.location.pathname.split('/').pop() || 'profile.html';
+            document.querySelectorAll('.nav-link').forEach(link => {
+                const href = link.getAttribute('href');
+                if (href === currentPage) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

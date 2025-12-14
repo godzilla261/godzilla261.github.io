@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/about-us.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">
+            <div class="logo-icon">
+                <img src="/image/Логотип.svg"></img>
+            </div>
+            <div class="logo-text">ting.ru</div>
+        </a>
+        
+        <div class="nav-container">
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Главная</a>
+                <a href="services.html" class="nav-link">Услуги</a>
+                <a href="gallery.html" class="nav-link">Галерея</a>
+                <a href="aboutus.html" class="nav-link">О нас</a>
+            </nav>
+        </div>
+        
+        <button class="header-login-btn" >
+        <a class='header-login-txt' href="/autorization.html">Войти </a>
+        </button>
+    </header>
+
+    <main class="main-content">
+        <div class="background-overlay"></div>
+        <div class="auth-container">
+            <h1 class="auth-title">Регистрация</h1>
+            
+            <form id="registration-form">
+                <div class="form-group">
+                    <label for="username" class="form-label">Логин</label>
+                    <input type="text" id="username" class="form-input" placeholder="Введите ваш логин" required>
+                    <div class="error-message" id="username-error">
+                        Логин должен содержать от 3 до 30 символов, только латинские буквы и цифры
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password" class="form-label">Пароль</label>
+                    <input type="password" id="password" class="form-input" placeholder="Введите ваш пароль" required>
+                    <div class="password-requirements" id="password-requirements">
+                        <div class="requirement invalid" id="req-length">
+                            <i class="fas fa-circle"></i> Не менее 6 символов
+                        </div>
+                        <div class="requirement invalid" id="req-uppercase">
+                            <i class="fas fa-circle"></i> Заглавная буква
+                        </div>
+                        <div class="requirement invalid" id="req-lowercase">
+                            <i class="fas fa-circle"></i> Строчная буква
+                        </div>
+                        <div class="requirement invalid" id="req-number">
+                            <i class="fas fa-circle"></i> Минимум 1 цифра
+                        </div>
+                    </div>
+                    <div class="error-message" id="password-error">
+                        Пароль не соответствует требованиям
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone-number" class="form-label">Номер телефона</label>
+                    <input type="tel" id="phone-number" class="form-input" placeholder="+7(___)___-__-__" required>
+                    <div class="error-message" id="phone-error">
+                        Введите корректный номер телефона в формате +7(XXX)XXX-XX-XX
+                    </div>
+                </div>
+                
+                <div class="remember-group">
+                    <input type="checkbox" id="remember" class="remember-checkbox">
+                    <label for="remember" class="remember-label">Запомнить меня</label>
+                </div>
+                
+                <button type="submit" class="auth-login-btn" id="submit-btn">
+                    Зарегистрироваться
+                </button>
+            </form>
+            
+            <div class="auth-links">
+                <a href="autorization.html" class="auth-link">Уже есть аккаунт? Войдите в него</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="quick-links">
+                <a href="main.html" class="quick-link">
+                    <i class="fas fa-home"></i> Главная
+                </a>
+                <a href="services.html" class="quick-link">
+                    <i class="fas fa-flag-checkered"></i> Услуги
+                </a>
+                <a href="gallery.html" class="quick-link">
+                    <i class="fas fa-images"></i> Галерея
+                </a>
+                <a href="aboutus.html" class="quick-link">
+                    <i class="fas fa-info-circle"></i> О нас
+                </a>
+                <a href="autorization.html" class="quick-link">
+                    <i class="fas fa-sign-in-alt"></i> Войти
+                </a>
+            </div>
+            
+            
+            <div class="footer-contacts">
+                <div class="footer-contact-item">
+                    <div class="footer-contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="footer-contact-text">г. Москва, ул. Скоростная, д. 15</div>
+                </div>
+                
+                <div class="footer-contact-item">
+                    <div class="footer-contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="footer-contact-text">+7 (495) 123-45-67</div>
+                </div>
+                
+                <div class="footer-contact-item">
+                    <div class="footer-contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="footer-contact-text">Пн-Вс: 10:00 - 22:00</div>
+                </div>
+            </div>
+            
+            
+        
+            <div class="footer-bottom">
+                <div class="copyright">
+                    © 2024 carting.ru Все права защищены.
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="#" class="footer-bottom-link">Политика конфиденциальности</a>
+                    <a href="#" class="footer-bottom-link">Условия использования</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+ 
+            document.querySelector('.header-login-btn').addEventListener('click', function() {
+                document.querySelector('.auth-container').scrollIntoView({ 
+                    behavior: 'smooth',
+                    block: 'center'
+                });
+            });
+            
+           
+            document.querySelectorAll('.social-link').forEach(link => {
+                link.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-3px) scale(1.1)';
+                });
+                
+                link.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0) scale(1)';
+                });
+            });
+            
+         
+            document.querySelectorAll('.quick-link').forEach(link => {
+                link.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-2px)';
+                });
+                
+                link.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+    </script>
+
+    <!-- Валидация-->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const form = document.getElementById('registration-form');
+        const usernameInput = document.getElementById('username');
+        const passwordInput = document.getElementById('password');
+        const phoneInput = document.getElementById('phone-number');
+        const submitBtn = document.getElementById('submit-btn');
+        const passwordRequirements = document.getElementById('password-requirements');
+
+        // Показываем требования к паролю при фокусе
+        passwordInput.addEventListener('focus', function() {
+            passwordRequirements.style.display = 'block';
+        });
+
+        passwordInput.addEventListener('blur', function() {
+            if (!passwordInput.value) {
+                passwordRequirements.style.display = 'none';
+            }
+        });
+
+        // Валидация логина в реальном времени
+        usernameInput.addEventListener('input', function() {
+            validateUsername();
+        });
+
+        // Валидация пароля в реальном времени
+        passwordInput.addEventListener('input', function() {
+            validatePassword();
+        });
+
+        // Валидация телефона в реальном времени
+        phoneInput.addEventListener('input', function() {
+            formatPhoneNumber();
+            validatePhone();
+        });
+
+        // Форматирование номера телефона
+        function formatPhoneNumber() {
+            let value = phoneInput.value.replace(/\D/g, '');
+            
+            if (value.startsWith('7') || value.startsWith('8')) {
+                value = '7' + value.substring(1);
+            } else if (value.startsWith('9') && value.length === 10) {
+                value = '7' + value;
+            }
+            
+            let formattedValue = '+7';
+            
+            if (value.length > 1) {
+                formattedValue += '(' + value.substring(1, 4);
+            }
+            if (value.length >= 4) {
+                formattedValue += ')' + value.substring(4, 7);
+            }
+            if (value.length >= 7) {
+                formattedValue += '-' + value.substring(7, 9);
+            }
+            if (value.length >= 9) {
+                formattedValue += '-' + value.substring(9, 11);
+            }
+            
+            phoneInput.value = formattedValue;
+        }
+
+        // Валидация логина
+        function validateUsername() {
+            const username = usernameInput.value.trim();
+            const usernameError = document.getElementById('username-error');
+            const usernameRegex = /^[a-zA-Z0-9]{3,30}$/;
+            
+            if (!username) {
+                usernameInput.classList.remove('success', 'error');
+                usernameError.style.display = 'none';
+                return false;
+            }
+            
+            if (usernameRegex.test(username)) {
+                usernameInput.classList.remove('error');
+                usernameInput.classList.add('success');
+                usernameError.style.display = 'none';
+                return true;
+            } else {
+                usernameInput.classList.remove('success');
+                usernameInput.classList.add('error');
+                usernameError.style.display = 'block';
+                return false;
+            }
+        }
+
+        // Валидация пароля
+        function validatePassword() {
+            const password = passwordInput.value;
+            const passwordError = document.getElementById('password-error');
+            
+            // Проверки для требований
+            const hasMinLength = password.length >= 6;
+            const hasUppercase = /[A-Z]/.test(password);
+            const hasLowercase = /[a-z]/.test(password);
+            const hasNumber = /[0-9]/.test(password);
+            
+            // Обновляем отображение требований
+            updateRequirement('req-length', hasMinLength);
+            updateRequirement('req-uppercase', hasUppercase);
+            updateRequirement('req-lowercase', hasLowercase);
+            updateRequirement('req-number', hasNumber);
+            
+            // Проверяем все требования
+            const isValid = hasMinLength && hasUppercase && hasLowercase && hasNumber;
+            
+            if (!password) {
+                passwordInput.classList.remove('success', 'error');
+                passwordError.style.display = 'none';
+                return false;
+            }
+            
+            if (isValid) {
+                passwordInput.classList.remove('error');
+                passwordInput.classList.add('success');
+                passwordError.style.display = 'none';
+                return true;
+            } else {
+                passwordInput.classList.remove('success');
+                passwordInput.classList.add('error');
+                passwordError.style.display = 'block';
+                return false;
+            }
+        }
+
+        // Обновление отображения требований к паролю
+        function updateRequirement(elementId, isValid) {
+            const element = document.getElementById(elementId);
+            if (isValid) {
+                element.classList.remove('invalid');
+                element.classList.add('valid');
+                element.querySelector('i').className = 'fas fa-check-circle';
+            } else {
+                element.classList.remove('valid');
+                element.classList.add('invalid');
+                element.querySelector('i').className = 'fas fa-circle';
+            }
+        }
+
+        // Валидация телефона
+        function validatePhone() {
+            const phone = phoneInput.value;
+            const phoneError = document.getElementById('phone-error');
+            // Формат: +7(XXX)XXX-XX-XX
+            const phoneRegex = /^\+7\(\d{3}\)\d{3}-\d{2}-\d{2}$/;
+            
+            if (!phone) {
+                phoneInput.classList.remove('success', 'error');
+                phoneError.style.display = 'none';
+                return false;
+            }
+            
+            if (phoneRegex.test(phone)) {
+                phoneInput.classList.remove('error');
+                phoneInput.classList.add('success');
+                phoneError.style.display = 'none';
+                return true;
+            } else {
+                phoneInput.classList.remove('success');
+                phoneInput.classList.add('error');
+                phoneError.style.display = 'block';
+                return false;
+            }
+        }
+
+        // Обработка отправки формы
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const isUsernameValid = validateUsername();
+            const isPasswordValid = validatePassword();
+            const isPhoneValid = validatePhone();
+            
+            if (isUsernameValid && isPasswordValid && isPhoneValid) {
+                // Показываем сообщение об успешной регистрации
+                submitBtn.innerHTML = '<i class="fas fa-check"></i> Регистрация успешна!';
+                submitBtn.style.backgroundColor = '#2ed573';
+                submitBtn.disabled = true;
+                
+                // Редирект на главную страницу через 1.5 секунды
+                setTimeout(function() {
+                    window.location.href = 'index.html';
+                }, 1500);
+            } else {
+                // Анимация "тряски" для кнопки при ошибке
+                submitBtn.style.transform = 'translateX(-5px)';
+                setTimeout(() => {
+                    submitBtn.style.transform = 'translateX(5px)';
+                }, 50);
+                setTimeout(() => {
+                    submitBtn.style.transform = 'translateX(0)';
+                }, 100);
+                
+                // Показываем ошибки для всех невалидных полей
+                if (!isUsernameValid) {
+                    usernameInput.classList.add('error');
+                    document.getElementById('username-error').style.display = 'block';
+                }
+                if (!isPasswordValid) {
+                    passwordInput.classList.add('error');
+                    document.getElementById('password-error').style.display = 'block';
+                }
+                if (!isPhoneValid) {
+                    phoneInput.classList.add('error');
+                    document.getElementById('phone-error').style.display = 'block';
+                }
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

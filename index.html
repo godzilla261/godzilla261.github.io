@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/css/main-style.css">
+    <link rel="stylesheet" href="/css/about-us.css">
+
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">
+            <div class="logo-icon">
+                <img src="/image/Логотип.svg"></img>
+            </div>
+            <div class="logo-text">ting.ru</div>
+        </a>
+
+        <button class="navbar-toggler d-block d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="nav-container">
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Главная</a>
+                <a href="services.html" class="nav-link">Услуги</a>
+                <a href="gallery.html" class="nav-link">Галерея</a>
+                <a href="aboutus.html" class="nav-link">О нас</a>
+            </nav>
+        </div>
+        
+        <button class="header-login-btn" >
+         <a class='header-login-txt' href="/profile.html"><i class="fas fa-user"></i></a>
+        </button>
+        
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+            <div class="offcanvas-header">
+                <h1 class="offcanvas-title" id="mobileMenuLabel">Меню</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <nav class="nav-menu-mobile d-flex flex-column">
+                    <a href="index.html" class="nav-link">Главная</a>
+                    <a href="services.html" class="nav-link">Услуги</a>
+                    <a href="gallery.html" class="nav-link">Галерея</a>
+                    <a href="aboutus.html" class="nav-link">О нас</a>
+                    <a href="autorization.html" class="nav-link mt-3">
+                        <i class="fas fa-sign-in-alt me-2"></i>Войти
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <main class="main-content">
+        
+        <section class="hero-section">
+            <div class="slogan-container">
+                <div class="slogan-pyramid">
+                    <span class="slogan-line">Картинг —</span>
+                    <span class="slogan-line">Координация</span>
+                    <span class="slogan-line">Адреналин</span>
+                    <span class="slogan-line">Реакция</span>
+                    <span class="slogan-line">Точность</span>
+                    <span class="slogan-line">Интуиция</span>
+                    <span class="slogan-line">Навык</span>
+                    <span class="slogan-line">Гонки</span>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <img src="/image/0155.jpg" alt="Картинг">
+            </div>
+        </section>
+
+        
+        <section class="slider-section">
+            <h2 class="section-title">Наш картинг-клуб</h2>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="/image/pervenstvo-rossii-po-kartingu-i-akademija-raf_1-1.webp" alt="Картинг трасса">
+                        <div class="slide-overlay">
+                            <div class="slide-title">Профессиональная трасса</div>
+                            <div class="slide-description">500 метров асфальтового покрытия с безопасными отбойниками</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/image/1267.jpg" alt="Карты">
+                        <div class="slide-overlay">
+                            <div class="slide-title">Современные карты</div>
+                            <div class="slide-description">Флот из 20 картов с двигателями 270cc и 390cc</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/image/chempionat-rossii-i-pervenstvo-rossii-po-kartingu_5 (1).webp" alt="Гоночная экипировка">
+                        <div class="slide-overlay">
+                            <div class="slide-title">Полная экипировка</div>
+                            <div class="slide-description">Шлемы, комбинезоны и защита предоставляются бесплатно</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/image/pervenstvo-rossii-po-kartingu-i-akademija-raf_1-1.webp" alt="Детский картинг">
+                        <div class="slide-overlay">
+                            <div class="slide-title">Детские заезды</div>
+                            <div class="slide-description">Специальные карты и программы для детей от 8 лет</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/image/wide_4_3_8cc8ca2aba790cb25e58ca5347045935.jpg" alt="Корпоративные мероприятия">
+                        <div class="slide-overlay">
+                            <div class="slide-title">Корпоративные мероприятия</div>
+                            <div class="slide-description">Организация тимбилдингов и корпоративных соревнований</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/image/34824956275_40355a90e9_c.jpg" alt="Обучение">
+                        <div class="slide-overlay">
+                            <div class="slide-title">Обучение с инструктором</div>
+                            <div class="slide-description">Персональные тренировки с профессиональными гонщиками</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        
+        <section class="promo-section">
+            <div class="promo-image">
+                <img src="/image/wide_4_3_8cc8ca2aba790cb25e58ca5347045935.jpg" alt="Специальное предложение">
+            </div>
+            
+            <div class="promo-content">
+                <spam class="promo-title">Гонка со скидкой 50%!</spam>
+                <p class="promo-text">
+                    Только в этом месяце специальное предложение для новых гонщиков! 
+                    Первый заезд в нашем картинг-клубе со <span class="promo-highlight">скидкой 50%</span>.
+                </p>
+                <p class="promo-text">
+                    Приходите с друзьями и получите дополнительную скидку <br><span class="promo-highlight">10% на группу от 4 человек</span>.
+                    В стоимость включены: инструктаж, полная экипировка и 10 минут на трассе.
+                </p>
+                <p class="promo-text">
+                    Акция действует до конца месяца. Количество картов ограничено!
+                </p>
+                <button class="promo-btn">
+                    <a class="promo-btn-txt" href="services.html">Забронировать заезд</a>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="quick-links">
+                <a href="index.html" class="quick-link">
+                    <i class="fas fa-home"></i> Главная
+                </a>
+                <a href="services.html" class="quick-link">
+                    <i class="fas fa-flag-checkered"></i> Услуги
+                </a>
+                <a href="gallery.html" class="quick-link">
+                    <i class="fas fa-images"></i> Галерея
+                </a>
+                <a href="aboutus.html" class="quick-link">
+                    <i class="fas fa-info-circle"></i> О нас
+                </a>
+                <a href="autorization.html" class="quick-link">
+                    <i class="fas fa-sign-in-alt"></i> Войти
+                </a>
+            </div>
+            
+            
+            <div class="footer-contacts">
+                <div class="footer-contact-item">
+                    <div class="footer-contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="footer-contact-text">г. Москва, ул. Скоростная, д. 15</div>
+                </div>
+                
+                <div class="footer-contact-item">
+                    <div class="footer-contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="footer-contact-text">+7 (495) 123-45-67</div>
+                </div>
+                
+                <div class="footer-contact-item">
+                    <div class="footer-contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="footer-contact-text">Пн-Вс: 10:00 - 22:00</div>
+                </div>
+            </div> 
+        
+            <div class="footer-bottom">
+                <div class="copyright">
+                    © 2024 carting.ru Все права защищены.
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="#" class="footer-bottom-link">Политика конфиденциальности</a>
+                    <a href="#" class="footer-bottom-link">Условия использования</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        
+        const swiper = new Swiper('.swiper', {
+            slidesPerView: 2,
+            spaceBetween: 20,
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 10
+                },
+                768: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                1024: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                }
+            }
+        });
+        
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            const sloganLines = document.querySelectorAll('.slogan-line');
+            sloganLines.forEach((line, index) => {
+                line.style.opacity = '0';
+                line.style.transform = 'translateY(20px)';
+                
+                setTimeout(() => {
+                    line.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+                    line.style.opacity = '1';
+                    line.style.transform = 'translateY(0)';
+                }, index * 150);
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+           
+            const fadeElements = document.querySelectorAll('.fade-in');
+            
+           
+            function checkVisibility() {
+                fadeElements.forEach(element => {
+                    const rect = element.getBoundingClientRect();
+                    const isVisible = (
+                        rect.top <= (window.innerHeight || document.documentElement.clientHeight) * 0.9 &&
+                        rect.bottom >= 0
+                    );
+                    
+                    if (isVisible) {
+                        element.classList.add('visible');
+                    }
+                });
+            }
+            
+            
+            checkVisibility();
+            window.addEventListener('scroll', checkVisibility);
+            
+            
+            document.querySelectorAll('.social-link').forEach(link => {
+                link.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-3px) scale(1.1)';
+                });
+                
+                link.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0) scale(1)';
+                });
+            });
+            
+            
+            document.querySelectorAll('.quick-link').forEach(link => {
+                link.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-2px)';
+                });
+                
+                link.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+        });
+        
+    </script>
+</body>
+</html>
